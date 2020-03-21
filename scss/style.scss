@@ -1,0 +1,64 @@
+@import "reset";
+@import "base";
+@import "variables";
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid:
+        "picture header" auto
+        "aside main" 1fr
+        / 350px auto;
+}
+
+/* header */
+header {
+    grid-area: header;
+    min-height: 10rem;
+    background: linear-gradient(to right, var(--pumkin), var(--orange));
+    text-align: center;
+    padding: 4rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 6rem;
+        line-height: 6rem;
+        font-weight: 300;
+        letter-spacing: 2.5rem;
+    }
+    p {
+        font-size: 1.5rem;
+        letter-spacing: 0.8rem;
+    }
+}
+
+
+/* picture */
+.picture {
+    grid-area: picture;
+    padding: 3rem;
+    background: var(--background);
+    border-right: 1px solid #ddd;
+    img {
+        border-radius: 50%;
+    }
+}
+
+
+/* aside */
+aside {
+    grid-area: aside;
+    background: var(--background);
+    border-right: 1px solid #ddd;
+}
+
+
+/* main */
+main {
+    grid-area: main;
+/*     background: purple;
+ */}
