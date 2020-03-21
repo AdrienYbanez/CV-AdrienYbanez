@@ -108,6 +108,21 @@ aside {
                 margin: 0 0.5rem;
             }
         }
+
+        .social-container {
+            display: flex;
+            justify-content: start;
+            margin: 2rem 0;
+            i {
+                font-size: 2rem;
+                flex: 0 0 50px;
+                color: var(--pumkin);
+            }
+            p {
+                flex: auto;
+                margin: 0;
+            }
+        }
     }
 
     
