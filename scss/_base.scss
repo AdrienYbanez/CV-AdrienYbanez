@@ -24,8 +24,14 @@ ul {
 }
 
 a {
-    color: var(--text);
+    color: var(--primary);
     text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+a:hover {
+    color: var(--pumkin);
 }
 
 img {

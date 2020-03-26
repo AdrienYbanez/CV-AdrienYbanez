@@ -34,8 +34,13 @@ ul {
   list-style: none; }
 
 a {
-  color: var(--text);
-  text-decoration: none; }
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s; }
+
+a:hover {
+  color: var(--pumkin); }
 
 img {
   max-width: 100%; }
@@ -53,13 +58,25 @@ img {
   --hint: #999;
   --border-color: #ddd; }
 
+:root {
+  --font-family: 'Muli', 'sans-serif';
+  --light: #00c3ff;
+  --primary: #e67e22;
+  --dark: #2980b9;
+  --pumkin: #d35400;
+  --carrot: #e67e22;
+  --orange: #f39c12;
+  --text: #333;
+  --background: #fafafa;
+  --hint: #999;
+  --border-color: #ddd; }
+
 .title-small {
   letter-spacing: 0.5rem;
-  font-size: 1.7rem; }
+  font-size: 2.4rem; }
 
 .text-primary {
   color: var(--primary); }
-
 .text-hint {
   color: var(--hint); }
 
@@ -90,7 +107,6 @@ img {
     transform: rotate(5deg); }
   100% {
     transform: rotate(0deg); } }
-
 /* Landscape phones and down */
 /* Landscape phone to portrait tablet */
 /* Portrait tablet to landscape and desktop */
@@ -171,17 +187,27 @@ aside {
         height: 5px;
         top: 0;
         left: 0;
-        width: 80%;
         background: var(--orange);
         border-radius: 5px; }
+      aside .block .bar-skill .bar-skill-progress-html, aside .block .bar-skill .bar-skill-progress-css {
+        width: 80%; }
+      aside .block .bar-skill .bar-skill-progress-js {
+        width: 40%; }
+      aside .block .bar-skill .bar-skill-progress-angular {
+        width: 30%; }
       aside .block .bar-skill .bar-skill-dot {
         position: absolute;
         height: 10px;
         width: 10px;
         background: var(--pumkin);
-        left: calc(80% - 5px);
         top: -2.5px;
         border-radius: 5px; }
+      aside .block .bar-skill .bar-skill-dot-html, aside .block .bar-skill .bar-skill-dot-css {
+        left: calc(80% - 5px); }
+      aside .block .bar-skill .bar-skill-dot-js {
+        left: calc(40% - 5px); }
+      aside .block .bar-skill .bar-skill-dot-angular {
+        left: calc(30% - 5px); }
     aside .block .stars-container {
       display: flex;
       margin: 1rem 0 2rem 0;
@@ -194,11 +220,12 @@ aside {
       justify-content: start;
       padding: 1rem 1rem;
       border-radius: 5px;
-      transition: all 0.2s; }
+      transition: all 0.2s;
+      color: var(--text); }
       aside .block .social-container:hover {
         background: var(--border-color); }
         aside .block .social-container:hover i {
-          color: var(--pumkin);
+          color: var(--primary);
           transform: scale(1.3); }
       aside .block .social-container i {
         font-size: 2rem;
@@ -211,10 +238,10 @@ aside {
 /* main */
 main {
   grid-area: main;
-  padding: 5rem; }
+  padding: 5rem 8rem; }
   @media (max-width: 480px) {
     main {
-      padding: 5rem 1.5rem 0rem 1.5rem; } }
+      padding: 5rem 2rem 0rem 2rem; } }
   main h2 {
     margin: 0 0 4rem 0; }
   main p {
@@ -225,6 +252,7 @@ main {
     margin: 6rem 0; }
     main .experience .timeline {
       text-align: center;
+      min-width: 70px;
       color: var(--hint);
       padding-right: 1rem;
       border-right: solid 1px var(--border-color); }
@@ -294,3 +322,5 @@ footer {
       @media (max-width: 480px) {
         footer form input {
           min-width: 280px; } }
+
+/*# sourceMappingURL=style.css.map */
