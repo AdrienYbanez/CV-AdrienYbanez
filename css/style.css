@@ -14,6 +14,11 @@
   --text: #333;
   --background: #fafafa;
   --hint: #999;
+  --color-html: #e34c26;
+  --color-css: #2965f1;
+  --color-scss: #CD6799;
+  --color-js: #F0DB4F;
+  --color-angular: #B52E31;
   --border-color: #ddd; }
 
 html {
@@ -56,6 +61,11 @@ img {
   --text: #333;
   --background: #fafafa;
   --hint: #999;
+  --color-html: #e34c26;
+  --color-css: #2965f1;
+  --color-scss: #CD6799;
+  --color-js: #F0DB4F;
+  --color-angular: #B52E31;
   --border-color: #ddd; }
 
 :root {
@@ -69,6 +79,11 @@ img {
   --text: #333;
   --background: #fafafa;
   --hint: #999;
+  --color-html: #e34c26;
+  --color-css: #2965f1;
+  --color-scss: #CD6799;
+  --color-js: #F0DB4F;
+  --color-angular: #B52E31;
   --border-color: #ddd; }
 
 .title-small {
@@ -79,6 +94,19 @@ img {
   color: var(--primary); }
 .text-hint {
   color: var(--hint); }
+
+.i-logo {
+  font-size: 3rem; }
+  .i-logo-html {
+    color: var(--color-html); }
+  .i-logo-css {
+    color: var(--color-css); }
+  .i-logo-scss {
+    color: var(--color-scss); }
+  .i-logo-js {
+    color: var(--color-js); }
+  .i-logo-angular {
+    color: var(--color-angular); }
 
 .mb-5 {
   margin-bottom: 5em !important; }
@@ -144,7 +172,7 @@ header {
       header h1 {
         font-size: 4rem; } }
   header p {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     letter-spacing: 0.8rem; }
   header span {
     animation: bounce 2s;
@@ -190,9 +218,9 @@ aside {
         background: var(--orange);
         border-radius: 5px; }
       aside .block .bar-skill .bar-skill-progress-html, aside .block .bar-skill .bar-skill-progress-css {
-        width: 80%; }
+        width: 70%; }
       aside .block .bar-skill .bar-skill-progress-js {
-        width: 40%; }
+        width: 45%; }
       aside .block .bar-skill .bar-skill-progress-angular {
         width: 30%; }
       aside .block .bar-skill .bar-skill-dot {
@@ -203,9 +231,9 @@ aside {
         top: -2.5px;
         border-radius: 5px; }
       aside .block .bar-skill .bar-skill-dot-html, aside .block .bar-skill .bar-skill-dot-css {
-        left: calc(80% - 5px); }
+        left: calc(70% - 5px); }
       aside .block .bar-skill .bar-skill-dot-js {
-        left: calc(40% - 5px); }
+        left: calc(45% - 5px); }
       aside .block .bar-skill .bar-skill-dot-angular {
         left: calc(30% - 5px); }
     aside .block .stars-container {
@@ -234,6 +262,17 @@ aside {
       aside .block .social-container p {
         flex: auto;
         margin: 0; }
+    aside .block .codewars-block {
+      height: 50px;
+      padding: 0;
+      display: flex;
+      justify-content: center; }
+      aside .block .codewars-block a {
+        padding: 0;
+        margin: 0;
+        width: 100%; }
+        aside .block .codewars-block a img {
+          width: 100%; }
 
 /* main */
 main {

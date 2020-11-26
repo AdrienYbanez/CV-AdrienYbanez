@@ -114,10 +114,10 @@ aside {
             }
 
             .bar-skill-progress-html, .bar-skill-progress-css {
-                width: 80%;
+                width: 70%;
             }
             .bar-skill-progress-js {
-                width: 40%;
+                width: 45%;
             }
             .bar-skill-progress-angular {
                 width: 30%;
@@ -133,10 +133,10 @@ aside {
             }
 
             .bar-skill-dot-html, .bar-skill-dot-css {
-                left: calc(80% - 5px);
+                left: calc(70% - 5px);
             }
             .bar-skill-dot-js {
-                left: calc(40% - 5px);
+                left: calc(45% - 5px);
             }
             .bar-skill-dot-angular {
                 left: calc(30% - 5px);
@@ -175,6 +175,20 @@ aside {
             p {
                 flex: auto;
                 margin: 0;
+            }
+        }
+        .codewars-block {
+            height: 50px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            a {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
             }
         }
     }

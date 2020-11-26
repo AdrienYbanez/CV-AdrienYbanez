@@ -17,3 +17,22 @@
         color: var(--hint);
     }
 }
+
+.i-logo {
+    font-size: 3rem;
+    &-html {
+        color: var(--color-html);
+    }
+    &-css {
+        color: var(--color-css);
+    }
+    &-scss {
+        color: var(--color-scss);
+    }
+    &-js {
+        color: var(--color-js);
+    }
+    &-angular {
+        color: var(--color-angular);
+    }
+}
